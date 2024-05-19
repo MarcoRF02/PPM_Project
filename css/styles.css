@@ -229,7 +229,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    float: left;
+    /*float: left;*/
 }
 
 .main-container {
@@ -244,6 +244,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width: 115%;
 }
 
 .main-news {
@@ -356,4 +357,300 @@ body {
     .recommendation-item {
         flex: 1 1 100%;
     }
+}
+
+/*other news*/
+.other-news {
+    margin: 20px 0;
+}
+.other-news .category-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.other-news .news-item {
+    margin-bottom: 20px;
+}
+.other-news .news-item img {
+    width: 100%;
+    height: auto;
+}
+.other-news .news-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.other-news .news-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* photos */
+
+.container-photos {
+    margin-top: 20px;
+}
+
+.main-photo {
+    margin-bottom: 20px;
+}
+
+.main-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.side-photos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.additional-photos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.show-more-photos {
+    margin-top: 20px;
+}
+
+/*topics*/
+
+/*
+.subscriber-only {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.news-image {
+    width: 100%;
+    height: auto;
+}
+.article-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.subtext {
+    font-size: 1em;
+    color: #666;
+}
+
+.topic{
+    display: flex;
+}
+.topic-link{
+    color: #0a53be;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+*/
+
+
+.subscriber-only {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.news-image {
+    width: 100%;
+    height: auto;
+}
+.article-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.subtext {
+    font-size: 1em;
+    color: #666;
+}
+.topic-link {
+    color: #0a53be;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.topic {
+    display: flex;
+    flex-wrap: wrap;
+}
+.topic img {
+    max-width: 100%;
+    height: auto;
+}
+.text-container {
+    flex: 1;
+    padding-left: 15px;
+}
+
+/*upcoming events*/
+
+/*
+.upcoming-events {
+    margin-top: 30px;
+}
+.upcoming-events h2 {
+    margin-bottom: 20px;
+}
+.upcoming-events .event-card {
+    padding: 0;
+    margin-bottom: 20px;
+}
+.upcoming-events .event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.upcoming-events .event-card .card-body {
+    padding: 10px;
+}
+.calendar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calendar-container i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.date {
+    font-size: 14px;
+    color: gray;
+}
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+ */
+.upcoming-events {
+    margin-top: 30px;
+}
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-links a {
+    color: #000;
+    text-decoration: none;
+}
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+.carousel-item {
+    display: flex;
+}
+.event-card {
+    flex: 1;
+    margin: 0 10px;
+}
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.event-card .card-body {
+    padding: 10px;
+}
+.calendar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calendar-container i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.date {
+    font-size: 14px;
+    color: gray;
+}
+
+/*calendar links*/
+.calendar-icon {
+    margin-right: 10px;
+}
+.calendar-dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar-dates a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*footer*/
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .subscribe-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+.footer .subscribe-btn:hover {
+    text-decoration: none;
+    background-color: #0056b3;
+}
+
+/*footer title*/
+.footer-title{
+    font-family: 'Georgia', serif;
+    font-size: 25px;
+}
+
+/*custom links*/
+a.big-title {
+    color: black; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, sans-serif; /* Adjust font as needed */
+    font-size: 32px; /* Adjust font size for big titles */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Define the hover state for big title links */
+a.big-title:hover {
+    color: #0066CC; /* Color on hover, adjust to match the image */
+}
+
+/* Define the style for smaller title links */
+a.small-title {
+    color: black; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, sans-serif; /* Adjust font as needed */
+    font-size: 16px; /* Adjust font size for smaller titles */
+    font-weight: normal; /* Regular weight for smaller titles */
+}
+
+/* Define the hover state for smaller title links */
+a.small-title:hover {
+    color: #0066CC; /* Color on hover, adjust to match the image */
 }

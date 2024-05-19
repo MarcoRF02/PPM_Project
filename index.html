@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Header</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+
 </head>
 <body>
 <header class="header">
     <div class="top-bar">
         <button class="menu-button" onclick="toggleMenu()">☰ All Sections</button>
         <div class="auth-buttons">
-            <button>Subscribe</button>
-            <button>Log in</button>
+            <button class="btn btn-primary">Subscribe</button>
+            <button class="btn btn-primary">Log in</button>
         </div>
     </div>
 
@@ -86,8 +95,6 @@
 </div>
 
 
-
-
 <div class="body-container">
 
     <div class="main-container">
@@ -95,14 +102,14 @@
         <div class="content">
             <div class="main-news">
                 <div class="main-news-text">
-                <h1>Title Main News</h1>
+                <h1><a href="#" class="big-title">Title Main News</a></h1>
                 <p>Summary Main News: Lorem ispsum Lorem ispsum Lorem ispsum Lorem ispsum Lorem ispsum Lorem ispsum</p>
                 <div class="related-news">
                     <h2>Related</h2>
                     <p><strong>SUBSCRIBER ONLY</strong></p>
                     <ul>
-                        <li>Subscriber only news 1</li>
-                        <li>Subscriber only news 2</li>
+                        <li><a href="#" class="small-title">Subscriber only news 1</a></li>
+                        <li><a href="#" class="small-title">Subscriber only news 2</a></li>
                     </ul>
                 </div>
                 </div>
@@ -114,12 +121,12 @@
             <div class="latest-headlines">
                 <h2>Latest Headlines</h2>
                 <ul>
-                    <li>Latest Headlines Latest Headlines Latest Headlines Latest Headlines</li>
-                    <li>Latest Headlines Latest Headlines Latest Headlines Latest Headlines </li>
-                    <li>Latest Headlines Latest Headlines Latest Headlines Latest Headlines</li>
-                    <li><strong>SUBSCRIBER ONLY</strong> Subscriber Latest Headlines title</li>
+                    <li><a href="#" class="small-title">atest Headlines Latest Headlines Latest Headlines Latest Headlines</a></li>
+                    <li><a href="#" class="small-title">atest Headlines Latest Headlines Latest Headlines Latest Headlines</a></li>
+                    <li><a href="#" class="small-title">atest Headlines Latest Headlines Latest Headlines Latest Headlines</a></li>
+                    <li><strong>SUBSCRIBER ONLY</strong> <a href="#" class="small-title">Subscriber Latest Headlines title</a></li>
                     <li>Latest Headlines content Latest Headlines content</li>
-                    <li><strong>SUBSCRIBER ONLY</strong> Subscriber Latest Headlines title</li>
+                    <li><strong>SUBSCRIBER ONLY</strong>  <a href="#" class="small-title">Subscriber Latest Headlines title</a></li>
                     <li>ALatest Headlines content Latest Headlines content</li>
                 </ul>
             </div>
@@ -131,23 +138,23 @@
 
                     <img src="https://placehold.co/400x200" alt="img title news 1">
                     <p><strong>SUBSCRIBER ONLY</strong></p>
-                    <h3>Title news 1:  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</h3>
+                    <h3><a href="#" class="small-title">Title news 1: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</a></h3>
 
                 </div>
                 <div class="divSquare">
                     <img src="https://placehold.co/400x200" alt="img title news 2">
-                    <h3>Title news 2: lorem ipsum</h3>
+                    <h3><a href="#" class="small-title">Title news 2:  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</a></h3>
 
                 </div>
 
                 <div class="divSquare">
                     <img src="https://placehold.co/400x200" alt="img title news 3">
-                    <h3>Title news 3</h3>
+                    <h3><a href="#" class="small-title">Title news 3:  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</a></h3>
 
                 </div>
                 <div class="divSquare">
                     <img src="https://placehold.co/400x200" alt="img title news 4">
-                    <h3>Title news 4</h3>
+                    <h3><a href="#" class="small-title">Title news 4:  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</a></h3>
 
                 </div>
                 </div>
@@ -207,7 +214,528 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container other-news">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <h3 class="category-title"><a href="#">Crime and Public Safety</a></h3>
+                <div class="news-item">
+                    <img src="https://placehold.co/300x200" alt="Giuliani">
+                    <h4 class="news-title"> Title Lorem Ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h4>
+                    <p class="news-description">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                </div>
+                <ul class="list-unstyled">
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h3 class="category-title"><a href="#">Sports</a></h3>
+                <div class="news-item">
+                    <img src="https://placehold.co/300x200" alt="Sports">
+                    <h4 class="news-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h4>
+                    <p class="news-description">lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                </div>
+                <ul class="list-unstyled">
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h3 class="category-title"><a href="#">Things to Do</a></h3>
+                <div class="news-item">
+                    <img src="https://placehold.co/300x200" alt="Coppola">
+                    <h4 class="news-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h4>
+                    <p class="news-description">lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum  ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                </div>
+                <ul class="list-unstyled">
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                    <li>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container-photos container">
+
+        <div class="row">
+
+                <div class="col-md-8">
+                    <div class="main-photo">
+                        <img src="https://placehold.co/800x400" alt="Main Photo" class="img-fluid">
+                        <h2>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h2>
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="side-photos">
+                        <img src="https://placehold.co/150x100" alt="Side Photo 1" class="img-fluid">
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                        <img src="https://placehold.co/150x100" alt="Side Photo 2" class="img-fluid">
+                        <p>lorem ipsum lorem ipsum lorem ipsum </p>
+                        <img src="https://placehold.co/150x100" alt="Side Photo 3" class="img-fluid">
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                    </div>
+                </div>
+
+        </div>
+        <div class="row additional-photos d-none">
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 1" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 2" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 3" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 4" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 5" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/250x150" alt="Additional Photo 6" class="img-fluid">
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary show-more-photos">Show More Photos</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <div class="topic-link">
+            <a href="#">TOPIC 1</a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="topic">
+                    <img src="https://placehold.co/250x150" alt="Restaurant" class="news-image col-12 col-md-6">
+                    <div class="text-container col-12 col-md-6">
+                        <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+                        <div class="subtext">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="topic-link">
+            <a href="#">TOPIC 2</a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="topic">
+                    <img src="https://placehold.co/250x150" alt="Restaurant" class="news-image col-12 col-md-6">
+                    <div class="text-container col-12 col-md-6">
+                        <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</div>
+                        <div class="subtext">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="topic-link">
+            <a href="#">TOPIC 3</a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="topic">
+                    <img src="https://placehold.co/250x150" alt="Restaurant" class="news-image col-12 col-md-6">
+                    <div class="text-container col-12 col-md-6">
+                        <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</div>
+                        <div class="subtext">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="subscriber-only">SUBSCRIBER ONLY</div>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+                <hr>
+                <div class="article-title">Title lorem ipsum lorem ipsum lorem ipsum </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="reccomended">
+            <h1>TRENDING NATIONALLY</h1>
+        </div>
+        <div class="recommendation-list">
+            <div class="column">
+                <div class="recommendation-item">
+                    <div class="number">1</div>
+                    <div class="text">Placeholder text for the first recommendation</div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="number">2</div>
+                    <div class="text">Placeholder text for the second recommendation</div>
+                </div>
+
+
+            </div>
+            <div class="column">
+                <div class="recommendation-item">
+                    <div class="number">3</div>
+                    <div class="text">Placeholder text for the sixth recommendation</div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="number">4</div>
+                    <div class="text">Placeholder text for the seventh recommendation</div>
+                </div>
+                <div class="recommendation-item">
+                    <div class="number">5</div>
+                    <div class="text">Placeholder text for the eighth recommendation</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container upcoming-events">
+        <div class="header-links">
+            <h2>Upcoming Events</h2>
+            <div>
+                <a href="#">See All Events</a>
+                <a href="#" class="ml-3">+ Add your event</a>
+            </div>
+        </div>
+        <div id="eventsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Title event"</h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Thu, May 30</div>
+                                    </div>
+                                    <p class="card-text">Place of the event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Concert event</h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Sat, May 18</div>
+                                    </div>
+                                    <p class="card-text">Place of the event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title of the event</h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Sat, May 18</div>
+                                    </div>
+                                    <p class="card-text">City of the event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Event name</h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Sun, May 19</div>
+                                    </div>
+                                    <p class="card-text">Location of the event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Event title </h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Sun, May 19</div>
+                                    </div>
+                                    <p class="card-text">Place </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card event-card">
+                                <img src="https://via.placeholder.com/150" alt="Event Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Show title</h5>
+                                    <div class="calendar-container">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="date">Sun, May 19</div>
+                                    </div>
+                                    <p class="card-text">Address of the Show</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Add more event cards here for the next set of events -->
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Thu, May 30</div>
+                                        </div>
+                                        <p class="card-text">City</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Concert</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Sat, May 18</div>
+                                        </div>
+                                        <p class="card-text">Address</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Event name</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Sat, May 18</div>
+                                        </div>
+                                        <p class="card-text">Place</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title event</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Sun, May 19</div>
+                                        </div>
+                                        <p class="card-text">Cafe Address</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Event name</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Sun, May 19</div>
+                                        </div>
+                                        <p class="card-text">Event place</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card event-card">
+                                    <img src="https://via.placeholder.com/150" alt="Event Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">new event name</h5>
+                                        <div class="calendar-container">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <div class="date">Sun, May 19</div>
+                                        </div>
+                                        <p class="card-text">Adress </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#eventsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#eventsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="calendar-container">
+            <div class="calendar-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M7 10h2v2h-2v-2zm4 0h2v2h-2v-2zm-4 4h2v2h-2v-2zm4 0h2v2h-2v-2zm4-8v1h-6v-1h-2v1h-2v-1h-3v16h16v-16h-3v1h-2v-1h-2zm0 16h-14v-14h2v2h2v-2h6v2h2v-2h2v14zm-4-12h2v2h-2v-2zm4 0h2v2h-2v-2zm-4 4h2v2h-2v-2zm4 0h2v2h-2v-2zm-8-4h2v2h-2v-2zm0 4h2v2h-2v-2zm4 4h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
+            </div>
+            <div class="calendar-dates">
+                <a href="#">SAT<br>18</a>
+                <a href="#">SUN<br>19</a>
+                <a href="#">MON<br>20</a>
+                <a href="#">TUE<br>21</a>
+                <a href="#">WED<br>22</a>
+                <a href="#">THU<br>23</a>
+                <a href="#">FRI<br>24</a>
+                <a href="#">SAT<br>25</a>
+                <a href="#">SUN<br>26</a>
+                <a href="#">MON<br>27</a>
+                <a href="#">TUE<br>28</a>
+                <a href="#">WED<br>29</a>
+                <a href="#">THU<br>30</a>
+                <a href="#">FRI<br>31</a>
+                <a href="#">SAT<br>1</a>
+                <a href="#">SUN<br>2</a>
+                <a href="#">MON<br>3</a>
+                <a href="#">TUE<br>4</a>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<footer>
+
+
+    <div class="footer">
+        <div class="container">
+            <h2 class="footer-title">PPM Project: Mercury copy</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>News Alert</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Email Newsletters</a></li>
+                        <li><a href="#">Today's e-Edition</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                    <h5>Marketplace</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">lorem ipsum</a></li>
+                        <li><a href="#">lorem ipsum</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Digital Access FAQ</a></li>
+                        <li><a href="#">Join our Team</a></li>
+                        <li><a href="#">Special Sections</a></li>
+                        <li><a href="#">Sponsor a Group</a></li>
+                        <li><a href="#">Get Sponsored Access</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Advertise With Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Network Advertising</a></li>
+                        <li><a href="#">Daily Ads</a></li>
+                        <li><a href="#">Place a Legal Notice</a></li>
+                        <li><a href="#">Public Notices</a></li>
+                        <li><a href="#">lorem ipsum </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Subscribe</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Member Services</a></li>
+                        <li><a href="#">Manage Subscriptions</a></li>
+                        <li><a href="#">lorem ipsum lorem</a></li>
+                        <li><a href="#">Archive Search</a></li>
+                        <li><a href="#">Reprints</a></li>
+                    </ul>
+                    <a href="#" class="subscribe-btn mt-3">Subscribe Now</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">Terms of Use | Cookie Policy | Lorem ipsum | etc...</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</footer>
+
 </body>
 </html>
 
